@@ -19,12 +19,15 @@
             <div class="container">
 
                 <div class="nav-wrapper ">
-                    <a href="#!" class="brand-logo"><img src="alfath.png" width="80px" alt=""></a>
+                    <!-- <a href="#!" class="brand-logo"><img src="alfath.png" width="80px" alt=""></a> -->
+                    <a href="" class="brand-logo"> Klinik Medika </a>
                     <a href="#" data-target="mobile-nav" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                     <ul class="right hide-on-med-and-down">
-                        <li><a href="">Layanan</a></li>
+                        <!-- <li><a href="">Layanan</a></li> -->
                         <li><a href="">Fasilitas</a></li>
                         <li><a href="">Tentang kami</a></li>
+                        <li><a class="dropdown-trigger" href="#" data-target="dropdown2">Layanan<i
+                                    class="material-icons right">arrow_drop_down</i></a></li>
                     </ul>
                 </div>
             </div>
@@ -32,15 +35,33 @@
     </div>
     <!-- sidenav -->
     <ul class="sidenav" id="mobile-nav">
-        <li><a href="">Layanan</a></li>
         <li><a href="">Fasilitas</a></li>
         <li><a href="">Tentang kami</a></li>
+        <li><a class="dropdown-trigger" href="#" data-target="dropdown1">Layanan<i
+                    class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+    <!-- dropdown mobile-->
+    <ul id="dropdown1" class="dropdown-content" width='400px'>
+        <li><a href="#!">Jadwal Praktek</a></li>
+        <li><a href="#!">Info BPJS</a></li>
+        <!-- <li class="divider"></li> -->
+    </ul>
+
+    <!-- dropdown desktop -->
+    <ul id="dropdown2" class="dropdown-content" width='400px'>
+        <li><a href="#!">Jadwal Praktek</a></li>
+        <li><a href="#!">Info BPJS</a></li>
+        <!-- <li class="divider"></li> -->
     </ul>
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
         const sideNav = document.querySelectorAll('.sidenav');
         M.Sidenav.init(sideNav);
+
+        /* dropdown */
+        const dropDown = document.querySelectorAll('.dropdown-trigger');
+        M.Dropdown.init(dropDown);
     </script>
 </body>
 
