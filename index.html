@@ -53,6 +53,52 @@
         <li><a href="#!">Info BPJS</a></li>
         <!-- <li class="divider"></li> -->
     </ul>
+
+    <!-- slider -->
+    <div class="slider">
+        <ul class="slides">
+            <a href="" class="btn"
+                style="position: relative; z-index: 9999; border-radius: 40px; margin: 400px 650px;">GO</a>
+            <li>
+                <img src="img/slider/1.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/slider/2.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+            <li>
+                <img src="img/slider/3.jpg"> <!-- random image -->
+                <div class="caption center-align">
+                    <h3>This is our big Tagline!</h3>
+                    <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+                </div>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     <!--JavaScript at end of body for optimized loading-->
     <script type="text/javascript" src="js/materialize.min.js"></script>
     <script>
@@ -62,6 +108,17 @@
         /* dropdown */
         const dropDown = document.querySelectorAll('.dropdown-trigger');
         M.Dropdown.init(dropDown);
+
+        /* slider */
+        const slider = document.querySelectorAll('.slider')
+        M.Slider.init(slider, {
+
+            indicators: false,
+            interval: 3000,
+            transition: 400,
+            height: 571
+
+        });
     </script>
 </body>
 
